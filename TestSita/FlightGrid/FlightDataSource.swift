@@ -47,6 +47,8 @@ class FlightDataSource: NSObject, UICollectionViewDataSource
 		if let isFav = flight.isFavorite, isFav == true {
 			let configuration = UIImage.SymbolConfiguration(pointSize: 24)
 			cell.isFavorite.image = UIImage(systemName: "star.fill", withConfiguration: configuration)!.withTintColor(UIColor.yellow, renderingMode: .alwaysOriginal)
+		} else {
+			cell.isFavorite.image = nil
 		}
 		
 		if flight.image == nil {

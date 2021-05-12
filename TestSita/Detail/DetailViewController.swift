@@ -11,6 +11,7 @@ class DetailViewController: UIViewController
 	//MARK: - Variables
 	var flight: Flight!
 	var image: UIImage?
+	var delegate: DetailViewControllerDelegate?
 	
 	//MARK: - View Life Cycle
 	override func viewDidLoad() {
@@ -29,7 +30,6 @@ class DetailViewController: UIViewController
 	@IBAction func addFlightToFavorites(_ sender: FloatButton) {
 		flight.isFavorite = true
 		navigationController?.popViewController(animated: true)
+		delegate?.selectFavorite(flight)
 	}
-	
-	//MARK: - Segue
 }

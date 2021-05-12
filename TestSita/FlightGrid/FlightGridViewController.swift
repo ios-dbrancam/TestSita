@@ -8,6 +8,11 @@ class FlightGridViewController: UIViewController {
 	//MARK: - Variables
 	var store: FlightStore!
 	let flightDataSource = FlightDataSource()
+	var isSearchMode = false {
+		didSet {
+			exitSearchButton.isHidden = !isSearchMode
+		}
+	}
 	
 	//MARK: - View Life Cycle
 	override func viewDidLoad() {
@@ -27,12 +32,14 @@ class FlightGridViewController: UIViewController {
 			guard let textField = alert.textFields?[0], let inputStr = textField.text else { return }
 			self.flightDataSource.setFilter(inputStr)
 			self.flightsCollection.reloadData()
+			self.isSearchMode = true
 		})
 		alert.addAction(UIAlertAction(title: "Cancel", style: .cancel))
 		present(alert, animated: true, completion: nil)
 	}
 	
 	@IBAction func removeFilter(_ sender: UIButton) {
+		isSearchMode = false
 		flightDataSource.removeFilter()
 		flightsCollection.reloadData()
 	}
@@ -66,10 +73,10 @@ class FlightGridViewController: UIViewController {
 			guard let destinationVC = segue.destination as? DetailViewController else { return }
 			destinationVC.flight = flight
 			destinationVC.image = selectedCell.image.image
+			destinationVC.delegate = self
 			
 		default:
 			fatalError("Unkown segue ID")
 		}
 	}
 }
-

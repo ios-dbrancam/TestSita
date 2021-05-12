@@ -19,6 +19,8 @@
 		63A6097D264A9BF90003AA8F /* Flight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A6097C264A9BF90003AA8F /* Flight.swift */; };
 		63F89D45264BCCAE00C5B3EB /* FloatButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F89D44264BCCAE00C5B3EB /* FloatButton.swift */; };
 		63F89D4A264BCECA00C5B3EB /* FlightPersistance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F89D49264BCECA00C5B3EB /* FlightPersistance.swift */; };
+		63F89D4F264BEBCB00C5B3EB /* FlightGridVC + DetailDelegateExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F89D4E264BEBCB00C5B3EB /* FlightGridVC + DetailDelegateExt.swift */; };
+		63F89D52264BEBFF00C5B3EB /* FavoriteProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F89D51264BEBFF00C5B3EB /* FavoriteProtocol.swift */; };
 		63FE9203264AD04100A79721 /* instructions.txt in Resources */ = {isa = PBXBuildFile; fileRef = 63FE9202264AD04100A79721 /* instructions.txt */; };
 		63FE9206264AD13F00A79721 /* FlightDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63FE9205264AD13F00A79721 /* FlightDataSource.swift */; };
 		63FE9209264AD6B500A79721 /* FlightGridVC + FlowExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63FE9208264AD6B500A79721 /* FlightGridVC + FlowExt.swift */; };
@@ -42,6 +44,8 @@
 		63A6097C264A9BF90003AA8F /* Flight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flight.swift; sourceTree = "<group>"; };
 		63F89D44264BCCAE00C5B3EB /* FloatButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatButton.swift; sourceTree = "<group>"; };
 		63F89D49264BCECA00C5B3EB /* FlightPersistance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightPersistance.swift; sourceTree = "<group>"; };
+		63F89D4E264BEBCB00C5B3EB /* FlightGridVC + DetailDelegateExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FlightGridVC + DetailDelegateExt.swift"; sourceTree = "<group>"; };
+		63F89D51264BEBFF00C5B3EB /* FavoriteProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteProtocol.swift; sourceTree = "<group>"; };
 		63FE9202264AD04100A79721 /* instructions.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = instructions.txt; sourceTree = "<group>"; };
 		63FE9205264AD13F00A79721 /* FlightDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightDataSource.swift; sourceTree = "<group>"; };
 		63FE9208264AD6B500A79721 /* FlightGridVC + FlowExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FlightGridVC + FlowExt.swift"; sourceTree = "<group>"; };
@@ -102,6 +106,7 @@
 				63FE9205264AD13F00A79721 /* FlightDataSource.swift */,
 				63FE920C264AE1B100A79721 /* FlightGridVC + DelegateExt.swift */,
 				63FE9208264AD6B500A79721 /* FlightGridVC + FlowExt.swift */,
+				63F89D4E264BEBCB00C5B3EB /* FlightGridVC + DetailDelegateExt.swift */,
 				63A60970264A96700003AA8F /* FlightCell.swift */,
 			);
 			path = FlightGrid;
@@ -130,6 +135,7 @@
 			isa = PBXGroup;
 			children = (
 				63FE9211264AE75D00A79721 /* DetailViewController.swift */,
+				63F89D51264BEBFF00C5B3EB /* FavoriteProtocol.swift */,
 				63FE9216264AE79100A79721 /* Detail.storyboard */,
 			);
 			path = Detail;
@@ -211,11 +217,13 @@
 				63A60974264A97DF0003AA8F /* FlightAPI.swift in Sources */,
 				63FE9209264AD6B500A79721 /* FlightGridVC + FlowExt.swift in Sources */,
 				63A6095D264A957C0003AA8F /* FlightGridViewController.swift in Sources */,
+				63F89D4F264BEBCB00C5B3EB /* FlightGridVC + DetailDelegateExt.swift in Sources */,
 				63FE9206264AD13F00A79721 /* FlightDataSource.swift in Sources */,
 				63A60971264A96700003AA8F /* FlightCell.swift in Sources */,
 				63F89D45264BCCAE00C5B3EB /* FloatButton.swift in Sources */,
 				63A60979264A99150003AA8F /* FlightStore.swift in Sources */,
 				63A60959264A957C0003AA8F /* AppDelegate.swift in Sources */,
+				63F89D52264BEBFF00C5B3EB /* FavoriteProtocol.swift in Sources */,
 				63A6095B264A957C0003AA8F /* SceneDelegate.swift in Sources */,
 				63F89D4A264BCECA00C5B3EB /* FlightPersistance.swift in Sources */,
 				63FE920D264AE1B100A79721 /* FlightGridVC + DelegateExt.swift in Sources */,
