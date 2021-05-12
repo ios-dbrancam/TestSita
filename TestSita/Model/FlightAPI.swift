@@ -1,7 +1,7 @@
 import Foundation
 
-struct FlightAPI
-{
+struct FlightAPI {
+	
 	static private let urlStr = "https://2a6d3177-4681-4fc9-97b9-e4e9580db87a.mock.pstmn.io/airlines"
 	static let apiURL = URL(string: FlightAPI.urlStr)!
 	

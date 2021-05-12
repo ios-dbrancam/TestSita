@@ -1,7 +1,7 @@
 import Foundation
 
-struct FlightPersistance
-{
+struct FlightPersistance {
+	
 	// File Name & Dir
 	private static let persistanceFileName = "persistance"
 	private static var path: URL = {

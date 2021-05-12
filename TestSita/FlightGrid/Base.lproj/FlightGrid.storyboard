@@ -76,7 +76,7 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i4j-Wf-oYS" customClass="FloatButton" customModule="TestSita" customModuleProvider="target">
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i4j-Wf-oYS" customClass="FloatButton" customModule="TestSita" customModuleProvider="target">
                                 <rect key="frame" x="108.5" y="806" width="197" height="32"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="32" id="VYj-6d-El0"/>

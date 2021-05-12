@@ -1,7 +1,7 @@
 import UIKit
 
-extension FlightGridViewController: UICollectionViewDelegate
-{
+extension FlightGridViewController: UICollectionViewDelegate {
+	
 	func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
 		let flight = flightDataSource.flightsToDisplay[indexPath.row]
 		store.fetchImage(for: flight) { result in

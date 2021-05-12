@@ -5,8 +5,8 @@ enum ImageError: Error {
 	case creationError
 }
 
-class FlightStore
-{
+class FlightStore {
+	
 	private let session: URLSession = {
 		let configuration = URLSessionConfiguration.default
 		return URLSession(configuration: configuration)

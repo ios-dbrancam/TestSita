@@ -1,7 +1,7 @@
 import UIKit
 
-extension FlightGridViewController: UICollectionViewDelegateFlowLayout
-{
+extension FlightGridViewController: UICollectionViewDelegateFlowLayout {
+	
 	private var itemsPerRow: CGFloat { 3 }
 	private var spacing: CGFloat { 1 }
 	

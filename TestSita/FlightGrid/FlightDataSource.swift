@@ -1,7 +1,7 @@
 import UIKit
 
-class FlightDataSource: NSObject, UICollectionViewDataSource
-{
+class FlightDataSource: NSObject, UICollectionViewDataSource {
+	
 	//MARK: - Data
 	private var flights: [Flight] = []
 	func updateFlights(_ fetchedFlights: [Flight]) {

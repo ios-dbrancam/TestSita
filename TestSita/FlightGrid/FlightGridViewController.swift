@@ -1,6 +1,7 @@
 import UIKit
 
 class FlightGridViewController: UIViewController {
+	
 	//MARK: - Outlets
 	@IBOutlet var flightsCollection: UICollectionView!
 	@IBOutlet var exitSearchButton: FloatButton!
